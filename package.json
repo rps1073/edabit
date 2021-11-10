@@ -1,0 +1,22 @@
+{
+  "name": "edabit-practice-problems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rps1073/edabit-practice-problems.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rps1073/edabit-practice-problems/issues"
+  },
+  "homepage": "https://github.com/rps1073/edabit-practice-problems#readme",
+  "dependencies": {
+    "jest": "27.x.x"
+  }
+}
