@@ -1,12 +1,10 @@
 const mumblingChallenge = (str) => {
-  const stringArray = str.toLowerCase().split("");
+  const strArray = [...str.toLowerCase()];
 
-  const repeatedCharsArray = stringArray.map(char => char + char.repeat(stringArray.indexOf(char)));
-  const upperCasedArray = repeatedCharsArray.map(str => str[0].toUpperCase() + str.substring(1) + "-");
-  const concatenatedString = upperCasedArray.join("");
-  const trimmedString = concatenatedString.substring(0, concatenatedString.length - 1);
-
-  return trimmedString;
+  const repeated = strArray.map((element, index) => element.toUpperCase() + element.repeat(index));
+  const repeatedString = repeated.join("-");
+  
+  return repeatedString;
 }
 
 module.exports = mumblingChallenge;

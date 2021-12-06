@@ -6,6 +6,8 @@ describe("nameScore", () => {
     expect(nameScore("YOU")).toEqual("VERY GOOD");
     expect(nameScore("MATT")).toEqual("THE BEST");
     expect(nameScore("PUBG")).toEqual("NOT TOO GOOD");
+    expect(nameScore("ME")).toEqual("PRETTY GOOD");
+    expect(nameScore("BILL GATES")).toEqual("THE BEST");
 
   });
 });
