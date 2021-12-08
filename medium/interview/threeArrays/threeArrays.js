@@ -1,9 +1,11 @@
 const threeArrays = (arr1, arr2, arr3) => {
-  const arr2matches = arr2.map(num => arr1.includes(num) ? num: 0);
-  const arr3matches = arr2matches.map(num => arr2matches.includes(num) ? num : 0);
-
-  const sumCommon = arr3matches.reduce((previous, current) => previous + current);
-  return sumCommon;
+  return arr1.map(x => {
+    if (arr2.includes(x) && arr3.includes(x)) {
+        arr2[arr2.indexOf(x)] = 0;
+        arr3[arr3.indexOf(x)] = 0;
+        return x;
+    } else return 0;
+}).reduce((a,b) => a + b, 0)
 }
 
 module.exports = threeArrays;
